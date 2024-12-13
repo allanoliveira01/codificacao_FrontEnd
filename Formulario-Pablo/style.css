@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&family=Karla:ital,wght@0,200..800;1,200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    font-family: "Poppins", sans-serif;
+}
+
+:root{
+    --Red: hsl(0, 100%, 74%);
+    --Green: hsl(154, 59%, 51%);
+    --Blue: hsl(248, 32%, 49%);
+    --Dark-Blue: hsl(249, 10%, 26%); 
+    --Grayish-Blue: hsl(246, 25%, 77%);
+}
+body{
+    background-image: url(componente-formulario/images/bg-intro-desktop.png);
+    background-color: var(--Red);
+    display: flex;
+}
+
+.container-textos{
+    margin-top: 300px;
+    margin-left: 350px;
+    color: white;
+}
+
+.txt-1{
+    font-size: 50px;
+    width: 600px;
+}
+
+.txt-2{
+    width: 450px;
+    font-size: 16px;
+}
+
+.container-nav{
+    width: 700px;
+    height: 60px;
+    margin-top: 80px;
+    background-color: var(--Blue);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    border-radius: 10px;
+
+}
+.container-conteudo{
+    width: 600px;
+    height: 450px;
+    background-color: white;
+    position: absolute;
+    left: 958px;
+    top: 180px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+}
+
+.form-conteudo{
+    display: flex;
+    flex-direction: column;
+}
+
+.nome{
+    height: 50px;
+    padding-left: 20px;
+    border-radius: 7px;
+    border: 1px solid var(--Grayish-Blue);
+}
+
+
+.sNome{
+    height: 50px;
+    padding-left: 20px;
+    border-radius: 7px;
+    border: 1px solid var(--Grayish-Blue);
+}
+
+.email{
+    height: 50px;
+    padding-left: 20px;
+    border-radius: 7px;
+    border: 1px solid var(--Grayish-Blue);
+}
+
+.senha{
+    height: 50px;
+    padding-left: 20px;
+    border-radius: 7px;
+    border: 1px solid var(--Grayish-Blue);
+}
+
+.bt-apertar{
+    height: 50px;
+    background-color: var(--Green);
+    border: none;
+    border-radius: 7px;
+    color: white;
+    cursor: pointer;
+}
+
+.bt-apertar:hover{
+    background-color: hsla(154, 59%, 51%, 0.711);
+}
+
+
+.txt-final{
+    display: flex;
+    justify-content: center;
+    font-size: 12px;
+}
+
+.p-final{
+    width: 280px;
+    color: var(--Grayish-Blue);
+}
+
+.s-final{
+    color: var(--Red);
+}
+
+.msgNome{
+    margin-left: 448px;
+    font-size: 12px;
+    color: var(--Red);
+}
+
+.msgSNome{
+    margin-left: 448px;
+    font-size: 12px;
+    color: var(--Red);
+}
+
+.msgEmail{
+    margin-left: 442px;
+    font-size: 12px;
+    color: var(--Red);
+}
+
+.msgSenha{
+    margin-left: 454px;
+    font-size: 12px;
+    color: var(--Red);
+}

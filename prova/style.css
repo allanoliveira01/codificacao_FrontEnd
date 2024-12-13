@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --Red: hsl(0, 100%, 74%);
+    --Green: hsl(154, 59%, 51%);
+    --Blue: hsl(248, 32%, 49%);
+    --Dark-Blue: hsl(249, 10%, 26%);
+    --Grayish-Blue: hsl(246, 25%, 77%);
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+body{
+    background-color: var(--Red);
+    background-image: url(bg-intro-desktop.png);
+    display: flex;
+    margin-left: 300px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 80vh;  
+    overflow: hidden; /* Remove a rolagem de toda a página */
+}
+
+.container-frase{
+    display: flex;
+    justify-content: center;  
+}
+
+.frase{
+    font-size: 12px;
+    margin-left: 170px;
+    margin-top: 100px;
+    border-radius: 10px;
+    margin-bottom: 0;   
+    width: 450px;
+    padding: 10px;    
+    color: white;     /* Cantos arredondados */
+    background-color: var(--Blue); /* Fundo do parágrafo */
+    justify-content: center;
+    display: flex;
+}
+
+.container-frase strong{
+    color: white;
+    font-size: 12px;
+}
+
+input{
+    padding: 8px;
+        margin-bottom: 15px;
+        width: 380px;
+    position: relative;
+}
+
+.container-conteudo{
+    background-color: white;
+    height: 100%;
+    width: 450px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: column;
+    margin: 30px;
+    margin-left: 300px;
+    margin-right: 130px;
+    padding: 50px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.form-conteudo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 280px;
+}
+
+.bt-apertar {
+    cursor: pointer;
+    background-color: var(--Green);
+    color: white;
+    width: 380px;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 4px black;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2); /* Deslocamento horizontal, deslocamento vertical, desfoque, cor */
+
+}
+.bt-apertar:houver{
+    background-color: #45a049; /* Cor de fundo quando passar o mouse */
+    box-shadow: 6px 6px 15px rgba(0, 0, 0, 0.3); /* Sombra mais forte ao passar o mouse */
+
+}
+.p-final{
+    width: 280px;
+    color: var(--Grayish-Blue);
+    font-size: 10px;
+    margin: 10px; /* 10px em todos os lados */
+    white-space: nowrap; /* Impede a quebra de linha */
+    display: flex;
+    justify-content: center;
+}
+
+strong  {
+    color: var(--Red);
+    font-size: 10px;
+    text-align: center;
+}
+
+.container-textos {
+    display: flex;
+    flex-direction: column; /* Alinha o conteúdo verticalmente (h1 e p) */
+    justify-content: center; /* Centraliza o conteúdo verticalmente */
+    align-items: center; /* Alinha o conteúdo à esquerda */
+    position: absolute; /* Remove os elementos da sequência normal e coloca eles no topo da página */
+    top: 100px; /* Distância do topo */
+    left: 30px; /* Distância da esquerda */
+    
+}
+
+.txt-1{ 
+    color: white;
+    display: flex;
+    margin-left: 50px;  /* Adiciona 150px de espaço à esquerda */
+    margin-top: 80px; /* Adiciona 50px de espaço acima */
+    margin-right: 500px; /* Adiciona 500px de espaço à direita */
+    margin-bottom: 20px; /* Adiciona 25px de espaço abaixo */ 
+    
+}
+.txt-2{
+    color: white;
+    font-size: 12px;
+    display: flex;
+    margin-left: 150px; /* Adiciona 150px de espaço à esquerda */
+    margin-right: 500px; /* Adiciona 500px de espaço à direita */ 
+}
+
+
+.msgNome{
+    font-size: 10px;
+    color: var(--Red);
+    position: relative;
+    bottom: 10px;
+    left: 120px;
+}
+
+
+
+.msgSobrenome{
+    font-size: 10px;
+    color: var(--Red);
+    position: relative;
+    bottom: 10px;
+    left: 120px;
+}
+
+.msgEmail{
+    font-size: 10px;
+    color: var(--Red);
+    position: relative;
+    bottom: 10px;
+    left: 120px;
+}
+
+.msgSenha{
+    font-size: 10px;
+    color: var(--Red);
+    position: relative;
+    bottom: 10px;
+    left: 120px;
+}
+
+/* Define o estilo para os inputs */
+input {
+    padding: 8px;
+    margin-bottom: 15px;
+    width: 380px;
+    position: relative;
+    border-radius: 5px;
+    border: 1px, solid black; /* Cor padrão da borda */
+   /* Suaviza a transição da cor da borda */
+}
+
+/* Quando o input está em foco (clicado) */
+input:focus {
+    border-color: var(--Blue); /* Borda roxa quando clicado */
+    outline: none; /* Remove o contorno padrão do navegador */
+}
+
+/* Se desejar adicionar um efeito de borda vermelha para erros, você pode fazer isso também */
+input.erro {
+    border-color: red; /* Borda vermelha em caso de erro */
+}

@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100..900&family=Karla:ital,wght@0,200..800;1,200..800&display=swap');
+
+* {
+    Font-size: 16px;
+    margin: 0;
+    padding: 0;
+    font-family: "Karla", san-serif";
+
+}
+
+:root {
+    --Green-200-lighter: hsl(148, 38%, 91%);
+    --Green-600-medium: hsl(169, 82%, 27%);
+    --Red: hsl(0, 66%, 54%);
+    --White: hsl(0, 0%, 100%);
+    --Grey-500-medium: hsl(186, 15%, 59%);
+    --Grey-900-darker: hsl(187, 24%, 22%);
+}
+
+body {
+    background-color: var(--Green-200-lighter);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+.container {
+    background-color: var(--White);
+    padding: 30px;
+    border-radius: 10px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    display: block;
+
+}
+
+.group-name{
+    display: flex;
+}   
+
+.erro{
+    border: 1px solid var(--Red);
+}
+
+.message-erro{
+    color: var(--Red);
+}
+.erro-sobrenome{
+    color: var(--Red);
+}
+.erro-email{
+    color: var(--Red);
+}
+.erro-mensagem{
+    color: var(--Red);
+}
+.erro-terminal{
+    color: var(--Red);
+}
